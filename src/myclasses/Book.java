@@ -42,10 +42,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Book{" 
-                + "authors=" + Arrays.toString(authors)
-                + ", caption=" + caption 
-                + '}';
+        return "Book" + "\nauthors=" + Arrays.toString(authors)+ ", caption=" + caption + '}';
     }
     
 }

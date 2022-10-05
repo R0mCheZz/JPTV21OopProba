@@ -34,10 +34,7 @@ public class Author {
 
     @Override
     public String toString() {
-        return "Author{" 
-                + "firstname=" + firstname 
-                + ", lastname=" + lastname 
-                + '}';
+        return "\nAuthor{" + "firstname=" + firstname  + "\tlastname=" + lastname + '}';
     }
 
    
