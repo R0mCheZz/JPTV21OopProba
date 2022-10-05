@@ -42,7 +42,30 @@ public class JPTV21OopProba {
         authors2[1]=author3;
         book.setAuthors(authors2);
         System.out.println(book2.toString());
-        
+        System.out.println("-----------------------");
+        Book book3 = new Book();
+        book3.setCaption("Vqmeslennaja kniga");
+        Author author4 = new Author();
+        author4.setFirstname("Aleksandra");
+        author4.setLastname("Gorbunova");
+        Author author5 = new Author();
+        author5.setFirstname("Artem");
+        author5.setLastname("Karpov");
+        Author author6 = new Author();
+        author6.setFirstname("Andrei");
+        author6.setLastname("Lubnin");
+        Author[] authors3 = new Author[3];
+        authors3[0] = author4;
+        authors3[1] = author5;
+        authors3[2] = author6;
+        book3.setAuthors(authors3);     
+        System.out.println(book3.toString());
+        System.out.println("-------------------------");
+        Book newbook = new Book();
+        newbook.setCaption("kniwka moja");
+        newbook.addAuthor(author3);
+        System.out.println(newbook.toString());
+    
     }
     
 }
