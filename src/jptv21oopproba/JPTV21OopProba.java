@@ -5,6 +5,9 @@
  */
 package jptv21oopproba;
 
+import myclasses.Author;
+import myclasses.Book;
+
 /**
  *
  * @author pupil
@@ -16,6 +19,30 @@ public class JPTV21OopProba {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Author author1 = new Author();
+        author1.setFirstname("Aleksandr");
+        author1.setLastname("Pushkin");
+        Book book = new Book();
+        book.setCaption("Jevgeny Onegin");
+        Author[] authors = new Author[1];
+        authors[0] = author1;
+        book.setAuthors(authors);
+        System.out.println(book.toString());
+        
+        Book book2 = new Book();
+        book2.setCaption("Zolotoy teljenok");
+        Author author2 = new Author();
+        author2.setFirstname("Ilja");
+        author2.setLastname("Ilf");
+        Author author3 = new Author();
+        author3.setFirstname("Jevgeny");
+        author3.setLastname("Petrov");
+        Author[] authors2 = new Author[2];
+        authors2[0]=author2;
+        authors2[1]=author3;
+        book.setAuthors(authors2);
+        System.out.println(book2.toString());
+        
     }
     
 }
